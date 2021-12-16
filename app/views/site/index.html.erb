@@ -1,0 +1,5 @@
+<%= turbo_stream_from :things %>
+<%= turbo_frame_tag "things", src: things_path do %>
+  <p>Loading</p>
+<% end %>
+<%= turbo_frame_tag "things_form", src: new_thing_path, target: "_top" %>
